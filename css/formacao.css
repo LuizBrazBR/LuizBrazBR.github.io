@@ -123,3 +123,82 @@
 .formacao-idioma-lista span {
   color: #a3a3a3;
 }
+
+
+@media (max-width: 800px) { 
+
+  .formacao {
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    padding: 60px 40px 60px 40px;
+  
+  }
+
+  .formacao .subtitulo {
+    color: white ;
+  }
+
+
+  .formacao-curso-intensivo-titulo::before,  .formacao-idioma-titulo::before {
+
+    position: initial;
+    margin-bottom: 5px;
+  }
+
+  .formacao-curso-intensivo-titulo, .formacao-idioma-titulo, .formacao-curso-intensivo-lista li  {
+    margin-bottom: 10px;
+  }
+
+ .formacao-introducao {
+  max-width: initial;
+ }
+
+ 
+}
+
+@media (max-width: 400px) {
+  .formacao-introducao {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .formacao {
+    padding: 40px;
+  }
+
+  .formacao-curso {
+   
+    max-width: initial;
+
+  
+  }
+
+  .formacao-curso-intensivo-lista {
+    max-width: initial;
+
+    
+  }
+
+  .formacao-curso-intensivo-lista li {
+    font-size: .9rem;
+
+    
+  }
+
+  .formacao-idioma-lista li {
+
+    font-size: .9rem;
+  }
+
+  .formacao-instituto {
+    font-size:  .8rem;
+  }
+
+  .formacao-titulo {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+
+
+}

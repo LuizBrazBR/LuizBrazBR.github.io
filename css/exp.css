@@ -30,7 +30,7 @@ strong {
   position: relative;
   background: #f0f0f0;
   padding: 20px;
-  gap: 60px;
+  gap: 20px 60px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -78,4 +78,55 @@ strong {
 .exp-competencia li {
   padding: 5px 10px;
   background-color: #ffff;
+}
+
+
+@media (max-width: 800px) { 
+
+  .exp {
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    padding: 60px 40px 60px 40px;
+  
+  }
+
+  .exp .subtitulo {
+    color: #141414 ;
+  }
+
+  .exp-data {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: initial;
+   
+
+  }
+ 
+}
+
+@media (max-width: 400px) {
+
+  .exp-introducao {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .exp-empresa {
+ 
+    grid-template-columns: 1fr;
+   
+  }
+
+  .exp-data {
+    text-align: center;
+  }
+
+  .exp {
+
+     padding: 60px 40px 40px 40px;
+
+  }
+
 }
