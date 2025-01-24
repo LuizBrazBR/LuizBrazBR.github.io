@@ -113,6 +113,10 @@ strong {
     margin-bottom: 20px;
   }
 
+  .exp .subtitulo {
+    display: none;
+  }
+
   .exp-empresa {
  
     grid-template-columns: 1fr;
@@ -125,7 +129,7 @@ strong {
 
   .exp {
 
-     padding: 60px 40px 40px 40px;
+     padding: 20px 40px 40px 40px;
 
   }
 
