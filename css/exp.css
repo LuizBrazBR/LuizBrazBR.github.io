@@ -1,0 +1,81 @@
+.exp .subtitulo {
+  color: #e0e0e0;
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 60px 40px 120px 40px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 100px;
+}
+
+.exp-introducao {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #525252;
+  margin-bottom: 40px;
+  max-width: 45ch;
+}
+
+strong {
+  color: #141414;
+}
+
+.exp-empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background: #f0f0f0;
+  padding: 20px;
+  gap: 60px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.exp-empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#4193ff, #0038b8);
+  left: -4px;
+  top: 20px;
+}
+
+.exp-data {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  width: 80px;
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+.exp-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.exp-titulo,
+.exp-cargo {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.exp-competencia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exp-competencia li {
+  padding: 5px 10px;
+  background-color: #ffff;
+}

@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-menu li a {
+    font-size: 1.125rem;
+    line-height: 3.33; 
+    padding: 20px 10px;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}

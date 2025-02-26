@@ -1,0 +1,125 @@
+.container-formacao {
+  background-color: #141414;
+}
+
+.formacao .subtitulo {
+  color: black;
+}
+
+.formacao-introducao {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 40px;
+  max-width: 45ch;
+}
+
+.formacao {
+  max-width: 1200px;
+  padding: 120px 40px 60px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #a3a3a3;
+  align-items: center;
+  gap: 100px;
+}
+
+.formacao strong {
+  color: white;
+}
+
+.formacao-grau {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 0.75em;
+}
+
+.formacao-curso {
+  background: black;
+  padding: 20px;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.formacao-titulo {
+  color: white;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.formacao-titulo::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#4193ff, #0038b8);
+  left: -24px;
+}
+
+.formacao-instituto {
+  font-size: 1rem;
+}
+
+.formacao-curso-intensivo-titulo {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.formacao-curso-intensivo-titulo::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url(../img/cursos.svg);
+  left: -32px;
+  top: -5px;
+}
+.formacao-curso-intensivo-lista {
+  max-width: 340px;
+  margin-bottom: 40px;
+}
+
+.formacao-curso-intensivo-lista li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.125em;
+}
+.formacao-curso-intensivo-lista span {
+  color: #a3a3a3;
+}
+
+.formacao-idioma-titulo {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.formacao-idioma-titulo::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url(../img/idiomas.svg);
+  left: -32px;
+  top: -5px;
+}
+
+.formacao-idioma-lista li {
+  color: white;
+  font-size: 1.125em;
+}
+
+.formacao-idioma-lista span {
+  color: #a3a3a3;
+}

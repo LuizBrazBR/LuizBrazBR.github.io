@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  color: #141414;
+  font-family: Rubik, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8.125rem;
+  line-height: 1;
+  font-weight: bold;
+  word-break: break-all;
+  max-width: 3.7ch;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+div {
+  border-radius: 4px;
+}

@@ -1,0 +1,53 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  position: relative;
+}
+
+.titulo::before {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: url(../img/detalhe.svg);
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  top: -30px;
+}
+
+.main-txt {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main img {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+}
