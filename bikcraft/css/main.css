@@ -6,8 +6,14 @@
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   gap: var(--space-080);
+}
+
+.main-conteudo {
+
+  align-self: center;
+
+
 }
 
 .main h1 {
@@ -18,13 +24,6 @@
   margin-bottom: var(--space-020);
 }
 
-.main-img img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  object-position: left;
-
-}
 
 .button {
   background: linear-gradient(#ffbf00, #f2a50c);
