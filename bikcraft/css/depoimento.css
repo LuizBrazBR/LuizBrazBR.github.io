@@ -1,6 +1,8 @@
 .depoimento {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 120px;
+    
 }
 
 
@@ -12,32 +14,43 @@
     line-height: 1.33;
     color: var(--p5);
     margin-bottom: 32px;
-    width: 35ch;
+    width: 23ch;
+    position: relative;
 }
+
+.depoimento-conteudo {
+    padding-left: 80px;
+}
+
 
 .depoimento span {
     margin-bottom: 80px;
-
+    display: inline-block;
 }
 
 .depoimento-texto::before, .depoimento-texto::after {
     color: var(--p2);
     font-size: 4rem;
-
+    position: absolute;
 }
 
 
 .depoimento-texto::before {
     content: '“';
+    left: -40px;
+    top: -20px;
 }
 
 .depoimento-texto::after {
     content: '”';
+    top: 180px;
 }
 
 
 .depoimento-bg {
     background-color: var(--p1);
+    display: grid;
+    align-items: end;
 }
 
 
