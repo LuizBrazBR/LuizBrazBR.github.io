@@ -1,0 +1,23 @@
+.plano-bg {
+    background-color:  var(--c11);
+}
+
+.plano {
+    background-color:  var(--c12);
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+
+.plano span {
+    grid-column: 2;
+}
+
+.plano ul, .plano a {
+    grid-column: 1 / -1;
+}
+
+.plano a {
+    max-width: max-content;
+    margin-bottom: var(--space-032);
+}

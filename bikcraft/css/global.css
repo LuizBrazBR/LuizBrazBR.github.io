@@ -310,6 +310,7 @@ img {
 :root {
   --font-1-xxl: 600 64px/72px "Poppins", sans-serif;
   --font-1-xl: 600 32px/40px "Poppins", sans-serif;
+  --font-1-xl-b: 600 36px/48px "Poppins", sans-serif;
   --font-1-l: 400 24px/36px "Poppins", sans-serif;
   --font-2-l: 400 24px/36px "Roboto", sans-serif;
   --font-2-l-b: 500 24px/36px "Roboto", sans-serif;
@@ -330,6 +331,11 @@ img {
 .font-xl {
   font: var(--font-1-xl);
 }
+
+.font-xl-b {
+  font: var(--font-1-xl-b);
+}
+
 .font-l {
   font: var(--font-1-l);
 }
