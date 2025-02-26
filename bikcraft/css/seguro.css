@@ -1,0 +1,39 @@
+.seguro-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 -120px white, inset 0 120px white;
+  margin-top: 120px;
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-060);
+}
+
+.seguro-caracteristica {
+  display: flex;
+  gap: var(--space-040);
+  margin-bottom: var(--space-200);
+}
+
+.seguro-subtitulo {
+  margin-bottom: var(--space-020);
+  margin-top: var(--space-200);
+  display: inline-block;
+}
+
+.seguro-titulo {
+  margin-bottom: var(--space-032);
+}
+
+.seguro-texto {
+  margin-bottom: var(--space-020);
+}
+
+
+.seguro-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: left;
+}
