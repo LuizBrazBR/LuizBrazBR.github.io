@@ -1,5 +1,7 @@
 .plano-bg {
   background-color: var(--c11);
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .plano {
@@ -28,6 +30,9 @@
 
 .plano li {
   margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .plano li:last-child {
@@ -40,7 +45,20 @@
 }
 
 .plano-items {
+  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  align-items: center;
+}
+
+
+.plano li::before {
+  content: '';
+  background: url(../img/icones/lista.svg);
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -21px;  
 }

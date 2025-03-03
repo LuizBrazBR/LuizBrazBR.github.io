@@ -25,18 +25,3 @@
 }
 
 
-.button {
-  background: linear-gradient(#ffbf00, #f2a50c);
-  padding: var(--space-016) var(--space-032);
-  display: inline-block;
-  font: var(--font-1-m-b);
-  color: var(--p5);
-  text-transform: uppercase;
-  margin-bottom: var(--space-120);
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.button:hover {
-  background: linear-gradient(#cc9900, #c28509);
-}
