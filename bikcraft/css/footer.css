@@ -1,3 +1,18 @@
 .footer-bg {
   background-color: var(--c12);
 }
+
+.footer-contato {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-contato-icones {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-contato span {
+  display: block;
+  margin-bottom: 5px;
+}
