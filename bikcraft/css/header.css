@@ -1,9 +1,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-bottom: var(--space-032);
-
 }
 
 .header-nav {

@@ -1,0 +1,63 @@
+.seguros-bg {
+  background-color: var(--c12);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.seguros-vantagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  gap: 40px;
+}
+
+.seguros {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.seguros h1 {
+  margin-bottom: 90px;
+}
+
+.seguros dd {
+  font-weight: 400;
+  margin-left: 20px;
+  max-width: 80ch;
+}
+
+.seguros dt::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.seguros dt::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background: url(../img/icones/seta-abrir.svg);
+}
+
+.seguros dt:hover::after {
+  transform: rotate(180deg);
+}
+
+.seguros dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.seguros dl > div {
+  padding: 20px 20px 20px 40px;
+}
+
+.seguros dl > div:nth-of-type(odd) {
+  background-color: var(--c1);
+}

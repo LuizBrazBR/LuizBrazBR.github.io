@@ -28,7 +28,7 @@
   content: "";
   display: block;
   height: 2px;
-  width: 270px;
+  max-width: 270px;
   background: var(--c11);
   margin: 20px 20px 20px 0;
 }

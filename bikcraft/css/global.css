@@ -60,7 +60,8 @@ a {
 h1,
 h2,
 h3,
-p {
+p,
+dd {
   margin: 0;
 }
 
@@ -372,4 +373,8 @@ img {
 }
 .font-roboto-xs {
   font: var(--font-2-xs);
+}
+
+a {
+  color: unset;
 }

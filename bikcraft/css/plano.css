@@ -52,13 +52,16 @@
   align-items: center;
 }
 
+#seguros .plano-items {
+  margin-top: 0;
+}
 
 .plano li::before {
-  content: '';
+  content: "";
   background: url(../img/icones/lista.svg);
   display: inline-block;
   width: 13px;
   height: 9px;
   position: absolute;
-  left: -21px;  
+  left: -21px;
 }
