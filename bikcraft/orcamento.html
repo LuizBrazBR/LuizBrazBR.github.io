@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bikcraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="orcamento">
+  <header class="header">
+    <div class="header-container container">
+      <a href="./"><img src="./img/bikcraft.svg" alt=""></a>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="./bicicletas.html">Bicicletas</a></li>
+          <li><a href="./seguros.html">Seguros</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <span class="font-roboto-l-b">COTAÇÕES NO SEU EMAIL</span>
+        <h1 class="font-xxl">solicite um orçamento<span class="ponto-decorativo">.</span></h1>
+      </div>
+    </div>
+
+    <form action="" class="orcamento container">
+      <div class="orcamento-bg">
+        <div class="orcamento-produto">
+          <div>
+            <h2 class="font-xs c5 col-2">bikcraft ou seguro?</h2>
+            <div>
+              <input type="radio" id="bikcraft" name="produto" />
+              <label for="bikcraft">Bikcraft</label>
+              <input type="radio" id="seguro" name="produto" />
+              <label for="seguro">Seguro</label>
+            </div>
+          </div>
+          <div class="col-2">
+            <h2 class="font-xs c5">Escolha a sua:</h2>
+            <div>
+              <input type="radio" id="nimbus" name="tipo" />
+              <label for="nimbus">Nimbus Stark </label>
+            </div>
+            <div>
+              <input type="radio" id="magic" name="tipo" />
+              <label for="magic">Magic Might</label>
+            </div>
+            <div>
+              <input type="radio" id="nebula" name="tipo" />
+              <label for="nebula">Nebula Cosmic</label>
+            </div>
+          </div>
+          <div class="col-2">
+            <h2 class="font-xs c5">Escolha a plano:</h2>
+            <div>
+              <input type="radio" id="prata" name="tipo" />
+              <label for="prata">Prata </label>
+            </div>
+            <div>
+              <input type="radio" id="ouro" name="tipo" />
+              <label for="ouro">Ouro</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orcamento-formulario">
+        <h2 class="font-xs c9 col-2">Dados Pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" />
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input id="sobrenome" type="text" name="sobrenome" />
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="cpf" name="cpf" placeholder="000.000.000-00" />
+        </div>
+        <div class="col-2">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" />
+        </div>
+        <h2 class="font-xs c9 col-2">Entrega</h2>
+        <div>
+          <label for="CEP">CEP</label>
+          <input id="CEP" type="text" name="CEP" />
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input id="numero" type="text" name="numero" />
+        </div>
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input id="logradouro" type="text" name="logradouro" />
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input id="bairro" type="text" name="bairro" />
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="text" name="cidade" />
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input id="estado" type="text" name="estado" />
+        </div>
+        <div class="orcamento-termos col-2">
+          <input type="checkbox" id="termos" name="termos">
+          <label for="termos">Li e aceito os termos e condições.</label>
+        </div>
+        <button class="button col-2">SOLICITAR ORÇAMENTO</button>
+      </div>
+    </form>
+
+
+  </main>
+  <footer class="footer-bg">
+    <div class="footer container">
+      <div class="footer-contato">
+        <img src="img/bikcraft.svg" alt="">
+        <div>
+          <h3 class="font-roboto-l-b w">CONTATO</h3>
+          <div class="footer-endereco font-m-c">
+            <span><a href="tel:+5511950656718">+55 21 9999-9999</a></span>
+            <span><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></span>
+            <span>Rua Ali Perto, 42 - Botafogo</span>
+            <span>Rio de Janeiro - RJ</span>
+          </div>
+
+          <div class="footer-contato-icones">
+            <img src="./img/redes/instagram.svg" alt="">
+            <img src="./img/redes/facebook.svg" alt="">
+            <img src="./img/redes/youtube.svg" alt="">
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-roboto-l-b w">INFORMAÇÕES</h3>
+          <ul class="font-m-c ">
+            <li><a href="./bicicletas.html">Bicicletas</a></li>
+            <li><a href="./seguros.html">Seguros</a></li>
+            <li>Contato</li>
+            <li><a href="./termos.html">Termos e Condições</a></li>
+          </ul>
+        </div>
+        <span class="footer-direitos font-roboto-m">Bikcraft © Alguns direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -3,6 +3,12 @@
   padding-top: var(--space-120);
 }
 
+#bicicleta .galeria {
+  max-width: var(--max-width);
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
 .galeria-fotos {
   display: flex;
   gap: var(--space-040);

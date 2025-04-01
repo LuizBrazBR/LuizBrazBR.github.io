@@ -102,3 +102,35 @@
 #bicicleta .titulo-bg {
   padding-bottom: 60px;
 }
+
+.bicicleta-seguro-bg {
+  background-color: var(--c11);
+
+  box-shadow: inset 0 120px white, inset 0 -120px var(--c12);
+}
+
+.bicicleta-seguro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.bicicleta-seguro-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicleta-seguro-conteudo {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+.bicicleta-seguro h2 {
+  max-width: 15ch;
+  margin-bottom: 32px;
+}
+
+.bicicleta-seguro p {
+  max-width: 40ch;
+  margin-bottom: 20px;
+}

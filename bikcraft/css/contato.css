@@ -1,0 +1,194 @@
+.contato-bg {
+  background: linear-gradient(var(--c11) 55%, var(--c1) 0);
+  padding-bottom: 120px;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados {
+  background-color: var(--c12);
+  padding: 60px;
+  border-radius: 5px 0 0 5px;
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.contato-endereco span {
+  display: block;
+  padding-left: 28px;
+}
+
+.contato-endereco span:first-child {
+  background: url(../img/icones/local.svg) no-repeat;
+}
+
+.contato-endereco span:last-child {
+  margin-bottom: 32px;
+}
+
+.contato-contato a {
+  display: block;
+  padding-left: 28px;
+  max-width: max-content;
+}
+
+.contato-contato a:first-child {
+  background: url(../img/icones/email.svg) no-repeat;
+}
+
+.contato-contato a:last-child {
+  margin-top: 32px;
+  background: url(../img/icones/telefone.svg) no-repeat;
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  margin-left: 28px;
+}
+
+/* Formulário */
+
+body#contato {
+  background-color: var(--c1);
+}
+
+.contato-form {
+  padding: 60px;
+  background-color: var(--w);
+}
+
+.contato-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contato-form form label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contato-form form button {
+  width: max-content;
+}
+
+.contato-form form input[type="text"],
+.contato-form form input[type="email"],
+.contato-form form textarea {
+  min-width: 100%;
+  padding: 12px;
+  background-color: var(--c1);
+  box-sizing: border-box;
+  font: 400 16px/24px "Roboto", sans-serif;
+  color: var(--c7);
+  border: var(--c2) 1px solid;
+  border-radius: 5px;
+}
+
+.contato-form form input[type="text"]:focus,
+.contato-form form input[type="email"]:focus,
+.contato-form form textarea:focus {
+  outline: none;
+  border-color: var(--p1);
+  box-shadow: 0 0 0 2px #ffcc33;
+  background-color: var(--w);
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.contato-form form button {
+  margin-bottom: 0;
+}
+
+/* Lojas */
+
+.lojas {
+  padding-bottom: 120px;
+}
+
+.lojas-contato-rj-dados,
+.lojas-contato-sp-dados {
+  font-weight: 500;
+}
+
+.lojas-contato-sp > p,
+.lojas-contato-rj > p {
+  font-size: 14px;
+}
+
+.lojas-contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 40px;
+}
+
+.lojas-contato-rj {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.lojas-contato-sp,
+.lojas-contato-rj {
+  background-color: var(--w);
+  padding: 32px 60px;
+}
+
+.lojas h2 {
+  margin-bottom: 60px;
+}
+
+.lojas h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.lojas h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.lojas-contato-sp > p,
+.lojas-contato-rj > p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lojas-contato-sp > p img,
+.lojas-contato-rj > p img {
+  width: 15px;
+}
+
+.lojas-contato-sp-dados,
+.lojas-contato-rj-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+
+.lojas-contato-sp-dados > div,
+.lojas-contato-rj-dados > div {
+  border-left: 2px solid var(--c2);
+  padding-left: 12px;
+}
+
+.lojas-contato-sp-dados p + p,
+.lojas-contato-rj-dados p + p {
+  margin-top: 16px;
+}

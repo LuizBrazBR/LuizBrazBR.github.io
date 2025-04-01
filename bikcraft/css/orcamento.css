@@ -1,0 +1,84 @@
+#orcamento {
+  background: linear-gradient(var(--c11) 55%, var(--c1) 0);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  left: -8px;
+}
+
+.orcamento-produto h2 {
+  margin-bottom: 20px;
+}
+
+/* Orçamento Produto */
+
+.orcamento-bg {
+  background-color: var(--c12);
+  padding: 60px;
+}
+
+.orcamento-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.orcamento-produto div > div {
+  padding: 16px 18px;
+  background-color: var(--c10);
+  display: grid;
+  color: var(--c4);
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  margin: 20px;
+}
+
+/* Orçamento Formulário */
+
+.orcamento-formulario {
+  background-color: var(--w);
+  padding: 60px;
+}
+
+.orcamento button {
+  margin-bottom: 0;
+  width: max-content;
+}
+
+.orcamento-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font: 500 16px/24px "Poppins", sans-serif;
+  color: var(--c11);
+}
+
+.orcamento-formulario input {
+  min-width: 100%;
+}
+
+.orcamento-termos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+}
