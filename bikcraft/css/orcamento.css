@@ -25,13 +25,13 @@
   left: -8px;
 }
 
-.orcamento-produto h2 {
-  margin-bottom: 20px;
-}
+
+
+
 
 /* Orçamento Produto */
 
-.orcamento-bg {
+.orcamento-produto {
   background-color: var(--c12);
   padding: 60px;
 }
@@ -39,19 +39,21 @@
 .orcamento-produto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 20px 20px;
+  align-content: start;
 }
 
-.orcamento-produto div > div {
+.orcamento-produto div {
   padding: 16px 18px;
   background-color: var(--c10);
   display: grid;
-  color: var(--c4);
   grid-template-columns: auto 1fr;
   gap: 12px;
   align-items: start;
-  margin: 20px;
 }
+
+
+
 
 /* Orçamento Formulário */
 
@@ -82,3 +84,7 @@
   grid-template-columns: auto 1fr;
   gap: 12px;
 }
+
+
+
+
