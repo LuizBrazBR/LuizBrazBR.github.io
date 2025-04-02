@@ -55,7 +55,7 @@
   pointer-events: none;
 }
 
-.orcamento-produto > input:checked + label {
+.orcamento-produto  input:checked + label:not([for="nimbus"]):not([for="magic"]):not([for="nebula"]) {
   background-color: var(--w);
   color: var(--c11);
   border: solid 1px var(--c12);
@@ -66,15 +66,28 @@
   display: grid;
 }
 
-.orcamento-produto-tipo input#nimbus:checked ~ div {
+.orcamento-produto-tipo input#nimbus:checked ~ div#nimbus {
   display: grid;
 }
 
+.orcamento-produto-tipo input#magic:checked ~ div#magic {
+  display: grid;
+}
+
+.orcamento-produto-tipo input#nebula:checked ~ div#nebula {
+  display: grid;
+}
+
+
 .orcamento-produto-tipo input:checked + label {
   background-color: var(--w);
-  margin-bottom: -20px;
   color: var(--c11);
   font-weight: 500;
+}
+
+
+.orcamento-produto-tipo#bikcraft input:checked + label {
+  margin-bottom: -20px;
   padding-bottom: 0;
 }
 
