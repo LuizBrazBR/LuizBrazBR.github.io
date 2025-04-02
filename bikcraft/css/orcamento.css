@@ -1,5 +1,5 @@
 #orcamento {
-  background: linear-gradient(var(--c11) 55%, var(--c1) 0);
+  background: linear-gradient(var(--c11) 35%, var(--c1) 0);
 }
 
 .orcamento {
@@ -175,10 +175,6 @@
   gap: 20px;
   font: 500 16px/24px "Poppins", sans-serif;
   color: var(--c11);
-}
-
-.orcamento-formulario input {
-  min-width: 100%;
 }
 
 .orcamento-termos {

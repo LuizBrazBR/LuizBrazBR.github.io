@@ -1,5 +1,5 @@
 .contato-bg {
-  background: linear-gradient(var(--c11) 55%, var(--c1) 0);
+  background: linear-gradient(var(--c11) 45%, var(--c1) 0);
   padding-bottom: 120px;
 }
 
@@ -106,7 +106,7 @@ body#contato {
   grid-column: span 2;
 }
 
- form button {
+ .contato-form form button {
   margin-bottom: 0;
 }
 
