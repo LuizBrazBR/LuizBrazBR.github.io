@@ -35,88 +35,102 @@
     </div>
 
     <form action="" class="orcamento container">
-        <div class="orcamento-produto">
-            <h2 class="font-xs c5 col-2">bikcraft ou seguro?</h2>
-            <div>
-            <input type="radio" id="bikcraft" name="produto" />
-            <label for="bikcraft">Bikcraft</label>
+      <div class="orcamento-produto">
+        <h2 class="font-xs c5 col-2">bikcraft ou seguro?</h2>
+        <input type="radio" id="bikcraft" name="produto" value="bikcraft" />
+        <label for="bikcraft">Bikcraft</label>
+        <input type="radio" id="seguro" name="produto" value="seguro" />
+        <label for="seguro">Seguro</label>
+        <div class="col-2 orcamento-produto-tipo" id="bikcraft">
+          <h2 class="font-xs c5 col-2">Escolha a sua:</h2>
+          <input class="col-2" type="radio" id="nimbus" name="tipo" value="nimbus" />
+          <label class="col-2" for="nimbus">Nimbus Stark <span>R$ 4999</span> </label>
+          <div class="orcamento-produto-descricao c11 col-2">
+            <div class="c8 font-xs">
+              <figure>
+                <img src="./img/icones/eletrica.svg" alt="Motor Elétrico">
+                <figcaption>Motor Elétrico</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/icones/carbono.svg" alt="Motor Elétrico">
+                <figcaption>Fibra de Carbono</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/icones/velocidade.svg" alt="Motor Elétrico">
+                <figcaption>50 km/h</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/icones/rastreador.svg" alt="Motor Elétrico">
+                <figcaption>Rastreador</figcaption>
+              </figure>
             </div>
             <div>
-            <input type="radio" id="seguro" name="produto" />
-            <label for="seguro">Seguro</label>
+              <img src="./img/bicicletas/nimbus.jpg" alt="">
             </div>
-            <h2 class="font-xs c5 col-2">Escolha a sua:</h2>
-            <div class="col-2">
-              <input type="radio" id="nimbus" name="tipo" />
-              <label for="nimbus">Nimbus Stark </label>
-            </div>
-            <div class="col-2">
-              <input type="radio" id="magic" name="tipo" />
-              <label for="magic">Magic Might</label>
-            </div>
-            <div class="col-2">
-              <input type="radio" id="nebula" name="tipo" />
-              <label for="nebula">Nebula Cosmic</label>
-            </div>
-            <h2 class="font-xs c5 col-2">Escolha o plano:</h2>
-            <div>
-              <input type="radio" id="prata" name="tipo" />
-              <label for="prata">Prata </label>
-            </div>
-            <div>
-              <input type="radio" id="ouro" name="tipo" />
-              <label for="ouro">Ouro</label>
-            </div>
+          </div>
+
+          <input type="radio" id="magic" name="tipo" value="magic" />
+          <label for="magic">Magic Might <span>R$ 2499</span> </label>
+          <input type="radio" id="nebula" name="tipo" value="nebula" />
+          <label for="nebula">Nebula Cosmic <span>R$ 3999</span> </label>
         </div>
-        <div class="orcamento-formulario">
-          <h2 class="font-xs c9 col-2">Dados Pessoais</h2>
-          <div>
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" name="nome" />
-          </div>
-          <div>
-            <label for="sobrenome">Sobrenome</label>
-            <input id="sobrenome" type="text" name="sobrenome" />
-          </div>
-          <div class="col-2">
-            <label for="cpf">CPF</label>
-            <input id="cpf" type="cpf" name="cpf" placeholder="000.000.000-00" />
-          </div>
-          <div class="col-2">
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" />
-          </div>
-          <h2 class="font-xs c9 col-2">Entrega</h2>
-          <div>
-            <label for="CEP">CEP</label>
-            <input id="CEP" type="text" name="CEP" />
-          </div>
-          <div>
-            <label for="numero">Número</label>
-            <input id="numero" type="text" name="numero" />
-          </div>
-          <div>
-            <label for="logradouro">Logradouro</label>
-            <input id="logradouro" type="text" name="logradouro" />
-          </div>
-          <div>
-            <label for="bairro">Bairro</label>
-            <input id="bairro" type="text" name="bairro" />
-          </div>
-          <div>
-            <label for="cidade">Cidade</label>
-            <input id="cidade" type="text" name="cidade" />
-          </div>
-          <div>
-            <label for="estado">Estado</label>
-            <input id="estado" type="text" name="estado" />
-          </div>
-          <div class="orcamento-termos col-2">
-            <input type="checkbox" id="termos" name="termos">
-            <label for="termos">Li e aceito os termos e condições.</label>
-          </div>
-          <button class="button col-2">SOLICITAR ORÇAMENTO</button>
+        <div class="col-2 orcamento-produto-tipo" id="seguro">
+          <h2 class="font-xs c5">Escolha o plano:</h2>
+          <input type="radio" id="prata" name="tipo" value="prata" />
+          <label for="prata">Prata <span>R$ 199</span> </label>
+          <input type="radio" id="ouro" name="tipo" value="ouro" />
+          <label for="ouro">Ouro <span>R$ 299</span> </label>
         </div>
+      </div>
+      <div class="orcamento-formulario">
+        <h2 class="font-xs c9 col-2">Dados Pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" />
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input id="sobrenome" type="text" name="sobrenome" />
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" name="cpf" placeholder="000.000.000-00" />
+        </div>
+        <div class="col-2">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" />
+        </div>
+        <h2 class="font-xs c9 col-2">Entrega</h2>
+        <div>
+          <label for="CEP">CEP</label>
+          <input id="CEP" type="text" name="CEP" />
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input id="numero" type="text" name="numero" />
+        </div>
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input id="logradouro" type="text" name="logradouro" />
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input id="bairro" type="text" name="bairro" />
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="text" name="cidade" />
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input id="estado" type="text" name="estado" />
+        </div>
+        <div class="orcamento-termos col-2">
+          <input type="checkbox" id="termos" name="termos">
+          <label for="termos">Li e aceito os termos e condições.</label>
+        </div>
+        <button class="button col-2">SOLICITAR ORÇAMENTO</button>
+      </div>
     </form>
 
 

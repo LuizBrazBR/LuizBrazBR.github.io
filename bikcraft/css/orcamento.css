@@ -25,10 +25,6 @@
   left: -8px;
 }
 
-
-
-
-
 /* Orçamento Produto */
 
 .orcamento-produto {
@@ -39,21 +35,105 @@
 .orcamento-produto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px 20px;
+  gap: 20px;
   align-content: start;
 }
 
-.orcamento-produto div {
+.orcamento-produto > label,
+.orcamento-produto-tipo > label {
   padding: 16px 18px;
   background-color: var(--c10);
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 12px;
   align-items: start;
+  cursor: pointer;
 }
 
+.orcamento-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
 
+.orcamento-produto > input:checked + label {
+  background-color: var(--w);
+  color: var(--c11);
+  border: solid 1px var(--c12);
+  box-shadow: 0 0 0 2px #ffcc33;
+}
 
+.orcamento-produto input#bikcraft:checked ~ #bikcraft {
+  display: grid;
+}
+
+.orcamento-produto-tipo input#nimbus:checked ~ div {
+  display: grid;
+}
+
+.orcamento-produto-tipo input:checked + label {
+  background-color: var(--w);
+  margin-bottom: -20px;
+  color: var(--c11);
+  font-weight: 500;
+  padding-bottom: 0;
+}
+
+.orcamento-produto input#seguro:checked ~ #seguro {
+  display: grid;
+}
+
+.orcamento-produto input:checked + label span {
+  display: grid;
+}
+
+.orcamento-produto label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.orcamento-produto label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--c7);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.orcamento-produto input:checked + label::before {
+  box-shadow: inset 0 0 0 3px white, inset 0 0 0 12px var(--c7);
+}
+
+.orcamento-produto-tipo {
+  display: none;
+  gap: 20px;
+}
+
+.orcamento-produto-descricao {
+  display: none;
+  grid-template-columns: max-content 1fr;
+  gap: 16px;
+  background-color: var(--w);
+  padding: 20px 18px 16px 38px;
+}
+
+.orcamento-produto-descricao figure {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.orcamento-produto-descricao figure img {
+  width: 16px;
+  height: 16px;
+}
+
+.orcamento-produto-descricao figure + figure {
+  margin-top: 8px;
+}
 
 /* Orçamento Formulário */
 
@@ -84,7 +164,3 @@
   grid-template-columns: auto 1fr;
   gap: 12px;
 }
-
-
-
-
