@@ -95,6 +95,10 @@
   display: grid;
 }
 
+.orcamento-produto span {
+  display: none;
+}
+
 .orcamento-produto input:checked + label span {
   display: grid;
 }
@@ -177,3 +181,4 @@
   grid-template-columns: auto 1fr;
   gap: 12px;
 }
+

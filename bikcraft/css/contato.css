@@ -70,19 +70,19 @@ body#contato {
   gap: 20px;
 }
 
-.contato-form form label {
+ form label {
   font-weight: 500;
   display: block;
   margin-bottom: 4px;
 }
 
-.contato-form form button {
+ form button {
   width: max-content;
 }
 
-.contato-form form input[type="text"],
-.contato-form form input[type="email"],
-.contato-form form textarea {
+ form input[type="text"],
+ form input[type="email"],
+ form textarea, form select {
   min-width: 100%;
   padding: 12px;
   background-color: var(--c1);
@@ -93,9 +93,9 @@ body#contato {
   border-radius: 5px;
 }
 
-.contato-form form input[type="text"]:focus,
-.contato-form form input[type="email"]:focus,
-.contato-form form textarea:focus {
+ form input[type="text"]:focus,
+ form input[type="email"]:focus,
+ form textarea:focus, form select:focus  {
   outline: none;
   border-color: var(--p1);
   box-shadow: 0 0 0 2px #ffcc33;
@@ -106,7 +106,7 @@ body#contato {
   grid-column: span 2;
 }
 
-.contato-form form button {
+ form button {
   margin-bottom: 0;
 }
 
