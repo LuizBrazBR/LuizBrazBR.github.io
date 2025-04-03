@@ -39,14 +39,17 @@
   align-content: start;
 }
 
-.orcamento-produto label,
-.orcamento-produto-tipo label {
+.orcamento-produto label {
   padding: 16px 18px;
   background-color: var(--c10);
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
   cursor: pointer;
+}
+
+.orcamento-produto label:hover {
+  background-color: var(--c9);
 }
 
 .orcamento-produto input {
