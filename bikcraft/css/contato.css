@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 }
 
-#contato .titulo {
+.titulo {
   background-image: url(../img/dec/top-right.svg);
   background-repeat: no-repeat;
   background-position: top 40px right 40px;

@@ -55,7 +55,7 @@
 
 @media (min-width: 1200px) {
   .depoimento img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção original da imagem */
+    max-height: 700px;
+    height: auto;
   }
 }

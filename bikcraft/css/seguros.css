@@ -1,9 +1,3 @@
-#seguros .titulo {
-  background-image: url(../img/dec/top-right.svg);
-  background-repeat: no-repeat;
-  background-position: top 40px right 40px;
-}
-
 .seguros-bg {
   background-color: var(--c12);
   background-image: url(../img/dec/bottom-right.svg),

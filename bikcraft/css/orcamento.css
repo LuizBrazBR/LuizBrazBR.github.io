@@ -2,12 +2,6 @@
   background: linear-gradient(var(--c11) 35%, var(--c1) 0);
 }
 
-#orcamento .titulo {
-  background-image: url(../img/dec/top-right.svg);
-  background-repeat: no-repeat;
-  background-position: top 40px right 40px;
-}
-
 .orcamento {
   display: grid;
   grid-template-columns: 5fr 7fr;
