@@ -53,11 +53,13 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
+  background: url(../img/dec/top-right.svg) no-repeat top right;
 }
 
 .bicicletas-conteudo h2,
 .bicicletas-conteudo p {
   grid-column: 1/-1;
+  max-width: 45ch;
 }
 
 .bicicletas-conteudo a {

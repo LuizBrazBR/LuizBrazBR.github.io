@@ -1,5 +1,6 @@
 .main {
-  background-color: var(--c12);
+  background: var(--c12) url(../img/dec/bottom-left.svg) no-repeat bottom 160px
+    left 40px;
   box-shadow: inset 0 -120px white;
 }
 
@@ -10,10 +11,7 @@
 }
 
 .main-conteudo {
-
   align-self: center;
-
-
 }
 
 .main h1 {
@@ -23,5 +21,3 @@
   font: var(--font-2-l);
   margin-bottom: var(--space-020);
 }
-
-

@@ -6,6 +6,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  background-image: url(../../img/dec/bottom-left.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .bicicleta-img {
@@ -105,7 +108,10 @@
 
 .bicicleta-seguro-bg {
   background-color: var(--c11);
-
+  background-image: url(../../img/dec/top-right.svg),
+    url(../../img/dec/bottom-right.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 160px right 40px, bottom 160px right 40px;
   box-shadow: inset 0 120px white, inset 0 -120px var(--c12);
 }
 
