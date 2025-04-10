@@ -26,3 +26,22 @@ function ativarChecked(item) {
 if (query) {
   query.forEach(ativarChecked);
 }
+
+//Abrir e fechar conteúdo de FAQ
+const faq = document.querySelectorAll(".seguros dl div");
+
+function abrirMenu(event) {
+  if (event.currentTarget.classList.contains("primeiro")) {
+    event.currentTarget.classList.remove("primeiro");
+  } else {
+    event.currentTarget.classList.toggle("abrirFAQ");
+  }
+}
+
+function faqArray(item) {
+  item.addEventListener("click", abrirMenu);
+}
+
+if (faq) {
+  faq.forEach(faqArray);
+}

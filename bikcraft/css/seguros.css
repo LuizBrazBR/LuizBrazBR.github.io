@@ -47,6 +47,7 @@ h2 {
 
 .seguros dt:hover::after {
   transform: rotate(180deg);
+  transition: 0.5s;
 }
 
 .seguros dt {
@@ -54,14 +55,35 @@ h2 {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
   margin-bottom: 16px;
 }
 
-.seguros dl > div {
-  padding: 20px 20px 20px 40px;
+.seguros div {
+  cursor: pointer;
+}
+
+.seguros dl > div.abrirFAQ,
+.seguros dl > div.primeiro {
+  padding: 20px 20px 20px 40px !important;
+}
+
+.seguros dl > div:not(.seguros dl > div.primeiro) {
+  padding: 20px 20px 4px 40px;
 }
 
 .seguros dl > div:nth-of-type(odd) {
   background-color: var(--c1);
+}
+
+dd:not(div.primeiro dd) {
+  display: none;
+}
+
+.seguros .abrirFAQ dd {
+  display: grid;
+}
+
+.seguros .abrirFAQ dt::after,
+.seguros .primeiro dt::after {
+  transform: rotate(180deg);
 }
