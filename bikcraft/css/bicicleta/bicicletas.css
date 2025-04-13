@@ -18,8 +18,27 @@
   align-content: start;
 }
 
+.bicicleta-img img {
+  cursor: pointer;
+}
+
 .bicicleta-img img:first-child {
   grid-column: span 2;
+  cursor: unset;
+}
+
+@media (max-width: 1000px) {
+  .bicicleta-img {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-img img:first-child {
+    grid-column: unset;
+  }
+
+  .bicicleta-img img {
+    cursor: unset;
+  }
 }
 
 .bicicleta-conteudo > p {

@@ -21,3 +21,9 @@
   font: var(--font-2-l);
   margin-bottom: var(--space-020);
 }
+
+@media (max-width: 1100px) {
+  .button {
+    margin-bottom: 160px;
+  }
+}
