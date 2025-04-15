@@ -1,5 +1,4 @@
 @import "./global.css";
-@import "./utility/components.css";
 @import "./header.css";
 @import "./main.css";
 @import "./galeria.css";
@@ -15,3 +14,4 @@
 @import "./contato.css";
 @import "./orcamento.css";
 @import "./anime.css";
+@import "./utility/components.css";

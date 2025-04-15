@@ -67,6 +67,12 @@
   background: linear-gradient(#cc9900, #c28509);
 }
 
+.button.desativado:hover,
+.button.desativado {
+  background: var(--c4);
+  color: var(--c11);
+}
+
 .button2 {
   background: var(--c10);
   padding: var(--space-016) var(--space-032);

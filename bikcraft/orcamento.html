@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
   <title>Bikcraft</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
         <h1 class="font-xxl">solicite um orçamento<span class="ponto-decorativo">.</span></h1>
       </div>
     </div>
-    <form action="" class="orcamento container">
+    <form action="./enviar_email.php" class="orcamento container" method="post">
       <div class="orcamento-produto">
         <h2 class="font-xs c5 col-2">bikcraft ou seguro?</h2>
         <input type="radio" id="bikcraft" name="produto" value="bikcraft" />
@@ -152,7 +152,7 @@
         </div>
         <div class="col-2">
           <label for="email">E-mail</label>
-          <input id="email" type="email" name="email" />
+          <input id="email" type="email" name="email" required />
         </div>
         <h2 class="font-xs c9 col-2">Entrega</h2>
         <div>
@@ -251,6 +251,7 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
+  <script src="./js/formulario.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
   <title>Bikcraft</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="contato-form font-1-s c11">
-          <form action="">
+          <form action="./enviar_email.php" method="post">
             <div>
               <label for="nome">Nome</label>
               <input id="nome" type="text" name="nome" placeholder="Seu nome" />
@@ -74,7 +74,7 @@
             </div>
             <div class="col-2">
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" placeholder="contato@email.com" />
+              <input id="email" type="email" name="email" placeholder="contato@email.com" required />
             </div>
             <div class="col-2">
               <label for="mensagem">Mensagem</label>
@@ -159,6 +159,7 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
+  <script src="./js/formulario.js"></script>
 </body>
 
 </html>
