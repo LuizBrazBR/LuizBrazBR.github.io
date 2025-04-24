@@ -279,3 +279,49 @@ img {
     padding: 15px;
   }
 }
+
+/* qualidade */
+
+.qualidade {
+  display: flex;
+  gap: 20px;
+  padding: 60px;
+}
+
+.qualidade > div {
+  flex: 1 1 calc(33.33% - 20px);
+}
+
+.qualidade h1 {
+  color: #a4a4a4;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+h1::before {
+  content: "";
+  width: 8px;
+  height: 2.25rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.qualidade div:nth-of-type(3n + 1) h1::before {
+  background-color: #ae81ff;
+}
+
+.qualidade div:nth-of-type(3n + 2) h1::before {
+  background-color: #f9265e;
+}
+
+.qualidade div:nth-of-type(3n + 3) h1::before {
+  background-color: #66d9eb;
+}
+
+.qualidade p {
+  color: #878787;
+  font-size: 1rem;
+  font-weight: 500;
+}
