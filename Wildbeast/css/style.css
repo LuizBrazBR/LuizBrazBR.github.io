@@ -42,6 +42,27 @@ img {
     "footer footer footer ";
 }
 
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header "
+      "sidenav content content "
+      "sidenav advert advert "
+      "footer footer footer ";
+  }
+}
+
+@media (max-width: 700px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header "
+      "sidenav sidenav sidenav "
+      "content content content "
+      "advert advert advert "
+      "footer footer footer ";
+  }
+}
+
 /* CABEÇALHO */
 
 .header {
@@ -144,6 +165,7 @@ img {
 .caracteristicas > div {
   display: grid;
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  align-self: flex-start;
 }
 
 .caracteristicas .numero {
@@ -175,15 +197,10 @@ img {
   align-self: flex-end;
 }
 
-.start {
-  align-self: flex-start;
-}
-
 .content .legenda {
-  max-width: 25ch;
   color: #ae7afa;
-  font-family: 14px;
-  font-style: italic;
+  max-width: 30ch;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -231,6 +248,7 @@ img {
   display: grid;
   align-content: flex-start;
   gap: 30px;
+  margin: 0 auto;
 }
 
 /* Footer */
