@@ -44,6 +44,7 @@ img {
 
 @media (max-width: 1200px) {
   .estrutura {
+    grid-template-columns: minmax(150px, 1fr) 3fr;
     grid-template-areas:
       "header header header "
       "sidenav content content "
@@ -54,6 +55,8 @@ img {
 
 @media (max-width: 700px) {
   .estrutura {
+    grid-template-columns: 1fr;
+
     grid-template-areas:
       "header header header "
       "sidenav sidenav sidenav "
@@ -94,11 +97,24 @@ img {
   display: block;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 700px) {
+  .header img {
+    width: 100%; /* ou o tamanho que quiser */
+  }
+
   .header {
     grid-template-columns: 1fr;
+    justify-items: center; /* centraliza logo E menu dentro das células */
   }
-} */
+
+  .header li a {
+    font-size: 1rem;
+  }
+
+  .header ul {
+    gap: 10px;
+  }
+}
 
 /* Navegaçäo  */
 
@@ -123,6 +139,46 @@ img {
 
 .sidenav li a:hover {
   background-color: #ae7afa;
+}
+
+@keyframes mover {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidenav ul {
+    display: flex;
+    gap: 15px;
+    min-width: max-content;
+  }
+
+  .sidenav li {
+    flex: 1 0 60px;
+  }
+
+  .sidenav li a {
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+
+  .sidenav {
+    overflow-x: auto;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "➔";
+    color: rgba(44, 44, 44, 0.15);
+    position: absolute;
+    top: 0;
+    right: 30px;
+    animation: mover 0.5s infinite alternate;
+  }
 }
 
 /* Content */
